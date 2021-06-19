@@ -1,0 +1,9 @@
+﻿@model Travel_API.Models.TravelInfo
+
+<h2>Travel</h2>
+
+@foreach (Travel_API.Models.Quote body in Model.Quotes)
+{
+    @(body.Direct + " " + body.MinPrice + " " + body.OutboundLeg+ " "+ body.QuoteId)
+    <br />
+}
